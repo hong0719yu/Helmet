@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- 工人实名认证顶部 -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="@color/co_registerTop_bg">
+        <!-- 返回图标 -->
+        <ImageView
+            android:id="@+id/back_worker"
+            android:layout_width="40dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:src="@drawable/back" />
+        <!-- 实名认证字体 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/str_certification_worker_title"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+    <!-- 跳过此步骤 -->
+    <LinearLayout
+        android:id="@+id/jump_worker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:background="@drawable/vertification_worker_submit"
+            android:text="@string/str_certification_jump" />
+
+    </LinearLayout>
+    <!-- 姓名与身份证号 -->
+    <LinearLayout
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textColor="@color/co_black"
+                android:text="@string/str_certification_worker_name"/>
+
+            <EditText
+                android:id="@+id/worker_name"
+                android:layout_width="270dp"
+                android:layout_height="match_parent"
+                android:background="@color/co_white" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textColor="@color/co_black"
+                android:text="@string/str_certification_ID"/>
+
+            <EditText
+                android:id="@+id/worker_ID_code"
+                android:layout_width="270dp"
+                android:layout_height="25dp"
+                android:background="@color/co_white"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <!-- 身份证正反面 -->
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal">
+        <!-- 身份证正面 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/IDCard_front_worker"
+                android:layout_width="200dp"
+                android:layout_height="130dp"
+                android:scaleType="fitXY"
+                android:layout_marginLeft="50dp"
+                android:src="@drawable/id_card1"/>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/take_front_worker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/str_take_picture_front"
+                    />
+                <Button
+                    android:id="@+id/album_front_worker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="70dp"
+                    android:text="@string/str_album"
+                    />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <!-- 身份证背面 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/IDCard_back_worker"
+                android:layout_width="200dp"
+                android:layout_height="130dp"
+                android:scaleType="centerCrop"
+                android:layout_marginLeft="50dp"
+                android:src="@drawable/id_card2"/>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/take_back_worker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_vertical"
+                android:text="@string/str_take_picture_back"
+                />
+            <Button
+                android:id="@+id/album_back_worker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="70dp"
+                android:text="@string/str_album"
+                />
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+    <!-- 提交认证 -->
+    <LinearLayout
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/vertification_worker_submit"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/submit_authentication_worker"
+            android:layout_width="75dp"
+            android:layout_height="25dp"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:text="@string/str_certification_worker_submit"/>
+
+    </LinearLayout>
+
+</LinearLayout>

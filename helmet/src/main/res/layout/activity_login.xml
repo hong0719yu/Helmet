@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/co_login_background">
+
+    <!-- 整体可分为四块，图片为一块
+                      ，账号和密码为一块
+                      ，登录按钮为一块
+                      ，忘记密码以及注册为一块 -->
+    <!-- 图片 -->
+    <ImageView
+        android:layout_width="390dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/login1"/>
+    <!-- 账号和密码，可设置为线性布局，里面有两行，一行为账号，一行为密码-->
+    <!-- 账号  不写垂直则默认为水平布局 -->
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <EditText
+            android:id="@+id/edit_account"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textColor="@color/co_edit_words"
+            android:background="@color/co_white"
+            android:inputType="number"
+            android:hint="@string/str_login_account"/>
+
+    </LinearLayout>
+    <!-- 密码 -->
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <EditText
+            android:id="@+id/edit_password"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/co_white"
+            android:hint="@string/str_login_password"
+            android:password="true"/>
+
+    </LinearLayout>
+
+    <!-- 登录，可设置为线性布局 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+        <!-- 登录 -->
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:height="60dp"
+            android:textSize="20sp"
+            android:textColor="@color/co_registerTop_bg"
+            android:textStyle="bold"
+            android:onClick="login"
+            android:text="@string/str_login_title"/>
+
+    </LinearLayout>
+    <!-- 记住密码 -->
+    <CheckBox
+        android:id="@+id/remember"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="@string/str_login_remember" />
+
+    <!-- 忘记密码与注册，设置为相对布局 -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+        <!-- 忘记密码？ -->
+       <TextView
+           android:id="@+id/find_password"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textColor="@color/co_title_words"
+           android:layout_alignParentLeft="true"
+           android:layout_marginLeft="7dp"
+           android:text="@string/str_login_forget_password"/>
+        <!-- 立即注册 -->
+        <TextView
+            android:id="@+id/register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/co_title_words"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="7dp"
+            android:text="@string/str_login_register"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hong.helmet">
+
+    <!-- 打电话 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <!-- 网络连接 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 读SD卡 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- 写入扩展存储，向扩展卡写入数据，用于写入离线定位数据 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 获取粗略位置 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 获取精确GPS位置 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 获取网络状态 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 更改wifi连接状态 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- 获取wifi状态 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 用于百度导航SDK TTS播报和来电互斥策略 -->
+    <!-- 用于读取手机当前的状态 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="0nQYfkMbWszkidU7E6F9sIaALGFzGH7G" />
+
+        <activity android:name="com.hong.activity.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.hong.activity.RegisterActivity" />
+        <activity android:name="com.hong.activity.HomeActivity" />
+        <activity android:name="com.hong.activity.FindPwdActivity" />
+        <activity android:name="com.hong.activity.CertificationForemanActivity" />
+        <activity android:name="com.hong.activity.CertificationWorkerActivity" />
+        <!--
+             注册内容提供器
+            FileProvider  是V4包下的类，继承自内容提供器（ContentProvider)
+            android:exported="false"  表示对其他应用不可用
+               grantUriPermissions="true"  表示授予临时权限
+        -->
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.hong.helmet.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity android:name="com.hong.activity.EnterSiteActivity" />
+        <activity android:name="com.hong.activity.NewSiteMapActivity" />
+        <activity android:name="com.hong.activity.SiteLocationActivity" />
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" />
+
+        <activity android:name="com.hong.activity.SiteFindWorkActivity" />
+        <activity android:name="com.hong.activity.ConstructionSiteActivity" />
+        <activity android:name="com.hong.activity.LabourSiteActivity" />
+        <activity android:name="com.hong.activity.MapViewActivity"></activity>
+    </application>
+
+</manifest>

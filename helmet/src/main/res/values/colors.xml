@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="co_title_words">#565656</color>
+    <color name="co_edit_words">#999999</color>
+    <color name="co_white">#ffffff</color>
+    <color name="co_login_background">#f0f0f0</color>
+    <color name="co_register_background">#dbdfde</color>
+    <color name="co_black">#000000</color>
+    <color name="co_registerTop_bg">#999a9b</color>
+    <color name="co_register_clickGet_bg">#fb1729f4</color>
+    <color name="co_register_now">#34bfb4</color>
+    <color name="co_light">#34bfb4</color>
+    <color name="co_register_login_bg">#d0d3d6</color>
+    <color name="co_home_site">#FFD3D083</color>
+    <color name="co_home_selected">#d81e06</color>
+    <color name="co_home">#323232</color>
+    <color name="co_fragment_bg">#d6cdca</color>
+    <color name="co_fragment_title_bg">#8d8c8c</color>
+    <color name="co_enter_site_bg">#c6c5c5</color>
+    <color name="co_site_location">#ffffff</color>
+</resources>

@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fadingEdge="vertical"
+        android:scrollbars="vertical">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- 轮播图 -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/banner1"
+                    android:visibility="visible" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/banner2"
+                    android:visibility="invisible" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/banner3"
+                    android:visibility="invisible" />
+
+                <LinearLayout
+                    android:layout_width="50dp"
+                    android:layout_height="10dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="180dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/banner_circle" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginStart="12dp"
+                        android:background="@drawable/banner_circle" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginStart="12dp"
+                        android:background="@drawable/banner_circle" />
+
+                </LinearLayout>
+                <!-- 通知图标 -->
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/notice"/>
+
+            </RelativeLayout>
+
+            <!-- 进入工地与新工地 -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp">
+
+                <ImageView
+                    android:id="@+id/enter_site"
+                    android:layout_width="185dp"
+                    android:layout_height="150dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/enter_site" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/enter_site"
+                    android:layout_alignEnd="@id/enter_site"
+                    android:layout_alignRight="@id/enter_site"
+                    android:background="@color/co_register_clickGet_bg"
+                    android:text="@string/str_home_enter_site"
+                    android:textColor="@color/co_home_site"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/new_site"
+                    android:layout_width="185dp"
+                    android:layout_height="150dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/new_site" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/new_site"
+                    android:layout_alignEnd="@id/new_site"
+                    android:layout_alignRight="@id/new_site"
+                    android:background="@color/co_register_clickGet_bg"
+                    android:text="@string/str_home_new_site"
+                    android:textColor="@color/co_home_site"
+                    android:textSize="18sp" />
+
+            </RelativeLayout>
+
+            <!-- 首页Info -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:orientation="vertical">
+                <!-- 首页第一条消息 -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <!-- 图片的位置 -->
+                    <ImageView
+                        android:id="@+id/home_first_pic"
+                        android:layout_width="110dp"
+                        android:layout_height="110dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/home_first_pic" />
+                    <!-- 标题的位置 -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="120dp"
+                        android:layout_marginStart="120dp"
+                        android:lines="2"
+                        android:text="@string/str_home_first_title"
+                        android:textColor="@color/co_black"
+                        android:textSize="18sp" />
+                    <!-- 钟表的位置 -->
+                    <ImageView
+                        android:id="@+id/home_first_clock"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="120dp"
+                        android:layout_marginStart="120dp"
+                        android:layout_marginTop="53dp"
+                        android:src="@drawable/clock" />
+                    <!-- 时间的位置 -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="145dp"
+                        android:layout_marginStart="145dp"
+                        android:layout_marginTop="55dp"
+                        android:lines="1"
+                        android:text="@string/str_home_first_date"
+                        android:textSize="17sp" />
+                    <!-- 眼睛的位置 -->
+                    <ImageView
+                        android:id="@+id/home_first_eye"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="120dp"
+                        android:layout_marginStart="120dp"
+                        android:layout_marginTop="83dp"
+                        android:src="@drawable/eye" />
+                    <!-- 阅读数量位置 -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@id/home_first_eye"
+                        android:layout_marginLeft="145dp"
+                        android:layout_marginStart="145dp"
+                        android:lines="1"
+                        android:text="@string/str_home_first_read_count"
+                        android:textSize="17sp" />
+                    <!-- 点赞的位置 -->
+                    <ImageView
+                        android:id="@+id/home_first_like"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="175dp"
+                        android:layout_marginStart="175dp"
+                        android:layout_marginTop="83dp"
+                        android:src="@drawable/like" />
+                    <!-- 点赞数量位置 -->
+                    <TextView
+                        android:id="@+id/home_first_like_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@id/home_first_like"
+                        android:layout_marginLeft="205dp"
+                        android:layout_marginStart="205dp"
+                        android:lines="1"
+                        android:text="@string/str_home_first_like_count"
+                        android:textSize="17sp" />
+
+                </RelativeLayout>
+                <!-- 首页第二条消息 -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+                    <!-- 图片的位置 -->
+                    <ImageView
+                        android:id="@+id/home_second_pic"
+                        android:layout_width="110dp"
+                        android:layout_height="110dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/home_second_pic" />
+                    <!-- 标题的位置 -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="120dp"
+                        android:layout_marginStart="120dp"
+                        android:lines="2"
+                        android:text="@string/str_home_second_title"
+                        android:textColor="@color/co_black"
+                        android:textSize="18sp" />
+                    <!-- 钟表的位置 -->
+                    <ImageView
+                        android:id="@+id/home_second_clock"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="120dp"
+                        android:layout_marginStart="120dp"
+                        android:layout_marginTop="53dp"
+                        android:src="@drawable/clock" />
+                    <!-- 时间的位置 -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="145dp"
+                        android:layout_marginStart="145dp"
+                        android:layout_marginTop="55dp"
+                        android:lines="1"
+                        android:text="@string/str_home_second_date"
+                        android:textSize="17sp" />
+                    <!-- 眼睛的位置 -->
+                    <ImageView
+                        android:id="@+id/home_second_eye"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="120dp"
+                        android:layout_marginStart="120dp"
+                        android:layout_marginTop="83dp"
+                        android:src="@drawable/eye" />
+                    <!-- 阅读数量位置 -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@id/home_second_eye"
+                        android:layout_marginLeft="145dp"
+                        android:layout_marginStart="145dp"
+                        android:lines="1"
+                        android:text="@string/str_home_second_read_count"
+                        android:textSize="17sp" />
+                    <!-- 点赞的位置 -->
+                    <ImageView
+                        android:id="@+id/home_second_like"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="175dp"
+                        android:layout_marginStart="175dp"
+                        android:layout_marginTop="83dp"
+                        android:src="@drawable/like" />
+                    <!-- 点赞数量位置 -->
+                    <TextView
+                        android:id="@+id/home_second_like_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@id/home_second_like"
+                        android:layout_marginLeft="205dp"
+                        android:layout_marginStart="205dp"
+                        android:lines="1"
+                        android:text="@string/str_home_second_like_count"
+                        android:textSize="17sp" />
+
+                </RelativeLayout>
+                <!-- 首页第三条消息 -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+                    <!-- 图片的位置 -->
+                    <ImageView
+                        android:id="@+id/home_third_pic"
+                        android:layout_width="110dp"
+                        android:layout_height="110dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/home_third_pic" />
+                    <!-- 标题的位置 -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="120dp"
+                        android:layout_marginStart="120dp"
+                        android:lines="2"
+                        android:text="@string/str_home_third_title"
+                        android:textColor="@color/co_black"
+                        android:textSize="18sp" />
+                    <!-- 钟表的位置 -->
+                    <ImageView
+                        android:id="@+id/home_third_clock"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="120dp"
+                        android:layout_marginStart="120dp"
+                        android:layout_marginTop="53dp"
+                        android:src="@drawable/clock" />
+                    <!-- 时间的位置 -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="145dp"
+                        android:layout_marginStart="145dp"
+                        android:layout_marginTop="55dp"
+                        android:lines="1"
+                        android:text="@string/str_home_third_date"
+                        android:textSize="17sp" />
+                    <!-- 眼睛的位置 -->
+                    <ImageView
+                        android:id="@+id/home_third_eye"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="120dp"
+                        android:layout_marginStart="120dp"
+                        android:layout_marginTop="83dp"
+                        android:src="@drawable/eye" />
+                    <!-- 阅读数量位置 -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@id/home_third_eye"
+                        android:layout_marginLeft="145dp"
+                        android:layout_marginStart="145dp"
+                        android:lines="1"
+                        android:text="@string/str_home_third_read_count"
+                        android:textSize="17sp" />
+                    <!-- 点赞的位置 -->
+                    <ImageView
+                        android:id="@+id/home_third_like"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="175dp"
+                        android:layout_marginStart="175dp"
+                        android:layout_marginTop="83dp"
+                        android:src="@drawable/like" />
+                    <!-- 点赞数量位置 -->
+                    <TextView
+                        android:id="@+id/home_third_like_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@id/home_third_like"
+                        android:layout_marginLeft="205dp"
+                        android:layout_marginStart="205dp"
+                        android:lines="1"
+                        android:text="@string/str_home_third_like_count"
+                        android:textSize="17sp" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/back_labour_site"
+        android:layout_width="67dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back" />
+
+    <TextView
+        android:id="@+id/labour_site_title"
+        android:layout_width="60dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/str_labour_site_title"
+        app:layout_constraintStart_toEndOf="@+id/back_labour_site"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/labour_site_all_jobs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="56dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/button_circle_blue_bg"
+        android:gravity="center"
+        android:text="@string/str_labour_site_all_jobs"
+        android:textColor="@color/co_white"
+        android:textSize="11sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/back_labour_site"
+        tools:ignore="SmallSp" />
+
+    <TextView
+        android:id="@+id/labour_site_welder_job"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:text="@string/str_labour_site_welder_job"
+        android:textColor="@color/co_white"
+        android:textSize="11sp"
+        android:gravity="center"
+        app:layout_constraintBaseline_toBaselineOf="@+id/labour_site_all_jobs"
+        app:layout_constraintStart_toEndOf="@+id/labour_site_all_jobs"
+        tools:ignore="SmallSp"
+        android:background="@drawable/button_circle_blue_bg"/>
+
+    <TextView
+        android:id="@+id/labour_site_electrician_job"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:text="@string/str_labour_site_electrician_job"
+        android:textColor="@color/co_white"
+        android:textSize="11sp"
+        tools:ignore="SmallSp"
+        android:gravity="center"
+        android:background="@drawable/button_circle_blue_bg"
+        app:layout_constraintBaseline_toBaselineOf="@+id/labour_site_welder_job"
+        app:layout_constraintStart_toEndOf="@+id/labour_site_welder_job" />
+
+    <TextView
+        android:id="@+id/labour_site_carpentry_job"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:text="@string/str_labour_site_carpentry_job"
+        android:textColor="@color/co_white"
+        android:textSize="11sp"
+        tools:ignore="SmallSp"
+        android:gravity="center"
+        android:background="@drawable/button_circle_blue_bg"
+        app:layout_constraintBaseline_toBaselineOf="@+id/labour_site_electrician_job"
+        app:layout_constraintStart_toEndOf="@+id/labour_site_electrician_job" />
+
+    <TextView
+        android:id="@+id/labour_site_scaffolder_job"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:text="@string/str_labour_site_scaffolder_job"
+        android:textColor="@color/co_white"
+        android:textSize="11sp"
+        tools:ignore="SmallSp"
+        android:gravity="center"
+        android:background="@drawable/button_circle_blue_bg"
+        app:layout_constraintBaseline_toBaselineOf="@+id/labour_site_carpentry_job"
+        app:layout_constraintStart_toEndOf="@+id/labour_site_carpentry_job" />
+
+    <TextView
+        android:id="@+id/labour_site_crane_job"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="56dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/button_circle_blue_bg"
+        android:gravity="center"
+        android:text="@string/str_labour_site_crane_job"
+        android:textColor="@color/co_white"
+        android:textSize="11sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/labour_site_all_jobs"
+        tools:ignore="SmallSp" />
+
+    <TextView
+        android:id="@+id/labour_site_shovel_machine_job"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:text="@string/str_labour_site_shovel_machine_job"
+        android:textColor="@color/co_white"
+        android:textSize="11sp"
+        tools:ignore="SmallSp"
+        android:gravity="center"
+        android:background="@drawable/button_circle_blue_bg"
+        app:layout_constraintBaseline_toBaselineOf="@+id/labour_site_crane_job"
+        app:layout_constraintStart_toEndOf="@+id/labour_site_crane_job" />
+
+    <TextView
+
+        android:id="@+id/labour_site_loading_unloading_job"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:text="@string/str_labour_site_loading_unloading_job"
+        android:textColor="@color/co_white"
+        android:textSize="11sp"
+        tools:ignore="SmallSp"
+        android:gravity="center"
+        android:background="@drawable/button_circle_blue_bg"
+        app:layout_constraintBaseline_toBaselineOf="@+id/labour_site_shovel_machine_job"
+        app:layout_constraintStart_toEndOf="@+id/labour_site_shovel_machine_job" />
+
+    <TextView
+        android:id="@+id/labour_site_pipeline_job"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:text="@string/str_labour_site_pipeline_job"
+        android:textColor="@color/co_white"
+        android:textSize="11sp"
+        tools:ignore="SmallSp"
+        android:gravity="center"
+        android:background="@drawable/button_circle_blue_bg"
+        app:layout_constraintBaseline_toBaselineOf="@+id/labour_site_loading_unloading_job"
+        app:layout_constraintStart_toEndOf="@+id/labour_site_loading_unloading_job" />
+
+    <TextView
+        android:id="@+id/labour_site_other_job"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:text="@string/str_labour_site_other_job"
+        android:textColor="@color/co_white"
+        android:textSize="11sp"
+        tools:ignore="SmallSp"
+        android:gravity="center"
+        android:background="@drawable/button_circle_blue_bg"
+        app:layout_constraintBaseline_toBaselineOf="@+id/labour_site_pipeline_job"
+        app:layout_constraintStart_toEndOf="@+id/labour_site_pipeline_job" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/labour_site_recycler_view"
+        android:layout_width="379dp"
+        android:layout_height="443dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/labour_site_crane_job" />
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/labour_site_map_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:clickable="true"
+        android:focusable="true"/>
+
+
+
+</android.support.constraint.ConstraintLayout>

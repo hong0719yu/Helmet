@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/construction_site_back"
+        android:layout_width="44dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back" />
+
+    <TextView
+        android:id="@+id/construction_site_helmet_camera_status"
+        android:layout_width="99dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="180dp"
+        android:layout_marginStart="180dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/str_construction_site_helmet_camera_status"
+        app:layout_constraintStart_toEndOf="@+id/construction_site_back"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/construction_site_on_off"
+        android:layout_width="44dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toEndOf="@+id/construction_site_helmet_camera_status"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/on_off_on" />
+
+    <ImageView
+        android:id="@+id/construction_site_image"
+        android:layout_width="353dp"
+        android:layout_height="230dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/construction_site_helmet_camera_status"
+        app:srcCompat="@drawable/site_pic_1" />
+
+    <Button
+        android:id="@+id/construction_site_remote_assistance"
+        android:layout_width="105dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="43dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button_shape2"
+        android:text="@string/str_construction_site_remote_assistance"
+        android:textColor="@color/co_white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/construction_site_remote_guidance"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/construction_site_image" />
+
+    <Button
+        android:id="@+id/construction_site_remote_guidance"
+        android:layout_width="105dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginStart="6dp"
+        android:background="@drawable/button_shape2"
+        android:text="@string/str_construction_site_remote_guidance"
+        android:textColor="@color/co_white"
+        app:layout_constraintBaseline_toBaselineOf="@+id/construction_site_remote_assistance"
+        app:layout_constraintStart_toEndOf="@+id/construction_site_remote_assistance" />
+
+    <Button
+        android:id="@+id/construction_site_vedio_transmission"
+        android:layout_width="105dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginStart="6dp"
+        android:background="@drawable/button_shape2"
+        android:text="@string/str_construction_site_vedio_transmission"
+        android:textColor="@color/co_white"
+        app:layout_constraintBaseline_toBaselineOf="@+id/construction_site_remote_assistance"
+        app:layout_constraintStart_toEndOf="@+id/construction_site_remote_guidance" />
+
+    <TextView
+        android:id="@+id/construction_site_foreman_remark_frame"
+        android:layout_width="346dp"
+        android:layout_height="196dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/textview_frame"
+        android:fadeScrollbars="false"
+        android:padding="20dp"
+        android:scrollbars="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/construction_site_remote_guidance" />
+
+    <TextView
+        android:id="@+id/construction_site_foreman_remark"
+        android:layout_width="72dp"
+        android:layout_height="23dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical"
+        android:text="@string/str_construction_site_foreman_remark"
+        app:layout_constraintStart_toStartOf="@+id/construction_site_foreman_remark_frame"
+        app:layout_constraintTop_toTopOf="@+id/construction_site_foreman_remark_frame" />
+
+    <TextView
+        android:id="@+id/construction_site_foreman_remark_content"
+        android:layout_width="295dp"
+        android:layout_height="139dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="44dp"
+        android:text="@string/str_construction_site_foreman_remark_content"
+        app:layout_constraintStart_toStartOf="@+id/construction_site_foreman_remark_frame"
+        app:layout_constraintTop_toTopOf="@+id/construction_site_foreman_remark_frame" />
+
+    <Button
+        android:id="@+id/construction_site_sign_in"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="108dp"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_circle"
+        android:text="@string/str_construction_site_sign_in"
+        android:textColor="@color/co_black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/construction_site_foreman_remark_frame" />
+
+    <Button
+        android:id="@+id/construction_site_sign_off"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginStart="80dp"
+        android:background="@drawable/button_circle"
+        android:text="@string/str_construction_site_sign_off"
+        android:textColor="@color/co_black"
+        app:layout_constraintBaseline_toBaselineOf="@+id/construction_site_sign_in"
+        app:layout_constraintStart_toEndOf="@+id/construction_site_sign_in" />
+
+</android.support.constraint.ConstraintLayout>

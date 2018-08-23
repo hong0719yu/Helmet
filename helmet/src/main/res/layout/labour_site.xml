@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:id="@+id/labour_site_project_name"
+        android:layout_width="112dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:gravity="center_vertical"
+        android:text="恒大御景湖2期"
+        android:textColor="@color/co_black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/labour_site_project_actual_number"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:gravity="center_vertical"
+        android:text="53"
+        android:textColor="@color/co_black"
+        app:layout_constraintStart_toEndOf="@+id/labour_site_project_name"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginStart="3dp"
+        android:gravity="center_vertical"
+        android:text="/"
+        android:textColor="@color/co_black"
+        app:layout_constraintStart_toEndOf="@+id/labour_site_project_actual_number"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/labour_site_project_real_number"
+        android:layout_width="16dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginStart="3dp"
+        android:gravity="center_vertical"
+        android:text="80"
+        android:textColor="@color/co_black"
+        app:layout_constraintStart_toEndOf="@+id/textView17"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/labour_site_project_people"
+        android:layout_width="20dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginStart="3dp"
+        android:gravity="center_vertical"
+        android:text="人"
+        android:textColor="@color/co_black"
+        app:layout_constraintStart_toEndOf="@+id/labour_site_project_real_number"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/labour_site_project_distance"
+        android:layout_width="28dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:gravity="center_vertical"
+        android:text="距离"
+        android:textColor="@color/co_black"
+        app:layout_constraintStart_toEndOf="@+id/labour_site_project_people"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/labour_site_project_distance_number"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginStart="3dp"
+        android:gravity="center_vertical"
+        android:text="8.0"
+        android:textColor="@color/co_black"
+        app:layout_constraintStart_toEndOf="@+id/labour_site_project_distance"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="29dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginStart="3dp"
+        android:gravity="center_vertical"
+        android:text="KM"
+        android:textColor="@color/co_black"
+        app:layout_constraintStart_toEndOf="@+id/labour_site_project_distance_number"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/labour_site_project_location_icon"
+        android:layout_width="30dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="13dp"
+        app:layout_constraintStart_toEndOf="@+id/textView19"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/location" />
+</android.support.constraint.ConstraintLayout>

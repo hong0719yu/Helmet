@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical"
+    android:fadingEdge="vertical">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/co_register_background"
+        android:orientation="vertical">
+
+        <!-- 注册顶部 -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:background="@color/co_registerTop_bg">
+            <!-- 返回图标 -->
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="40dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:clickable="true"
+                android:src="@drawable/back"
+                android:focusable="true" />
+            <!-- 注册字体 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="@string/str_register_title"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+        <!-- 图片 -->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="165dp"
+            android:layout_marginTop="40dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/register" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+            <!-- 注册手机号，密码以及验证码 -->
+            <!-- 手机号 -->
+            <EditText
+                android:id="@+id/phone_number"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="25dp"
+                android:background="@color/co_white"
+                android:hint="@string/str_register_account"
+                android:inputType="number"
+                android:paddingLeft="10dp"
+                android:textColor="@color/co_edit_words"
+                android:paddingStart="10dp" />
+
+            <!-- 验证码 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <!-- 验证码输入框 -->
+                <EditText
+                    android:id="@+id/verification_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/co_white"
+                    android:hint="@string/str_register_verification"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="160dp"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="160dp" />
+                <!-- 点击获取按钮 -->
+                <Button
+                    android:id="@+id/button_get_code"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="35dp"
+                    android:background="@drawable/button_shape"
+                    android:text="@string/str_register_clickGet"
+                    android:textColor="@color/co_white"
+                    android:layout_marginStart="35dp" />
+
+            </LinearLayout>
+
+            <!-- 密码及隐藏图标 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+                <!-- 密码 -->
+                <EditText
+                    android:id="@+id/register_pwd"
+                    android:layout_width="330dp"
+                    android:layout_height="40dp"
+                    android:background="@color/co_white"
+                    android:hint="@string/str_register_password"
+                    android:paddingLeft="10dp"
+                    android:password="true"
+                    android:paddingStart="10dp" />
+                <!-- 隐藏图标 -->
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/hide2" />
+
+            </LinearLayout>
+
+            <!-- 工长、工人单选框 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="9dp"
+                android:layout_marginTop="20dp">
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radio_foreman"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/str_register_foreman" />
+
+                    <RadioButton
+                        android:id="@+id/radio_work"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:text="@string/str_register_worker" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+            <!-- 阅读协议及同意协议单选框 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical"
+                android:layout_marginStart="10dp">
+                <!-- 阅读协议 -->
+                <TextView
+                    android:id="@+id/agreement_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/str_register_contract"
+                    android:textStyle="italic"
+                    android:layout_marginStart="5dp" />
+                <!-- 同意单选框 -->
+                <CheckBox
+                    android:id="@+id/checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/str_register_agreement" />
+
+            </LinearLayout>
+            <!-- 立即注册按钮 -->
+            <LinearLayout
+                android:id="@+id/register_now"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="130dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/co_register_login_bg"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/register_now_word"
+                    android:layout_width="75dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/str_register_now"
+                    android:textColor="@color/co_register_now"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
+

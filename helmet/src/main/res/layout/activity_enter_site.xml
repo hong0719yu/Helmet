@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/co_enter_site_bg"
+    android:orientation="vertical">
+
+     <!-- 标题 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <ImageView
+            android:id="@+id/back_enter_site"
+            android:layout_width="40dp"
+            android:layout_height="20dp"
+            android:src="@drawable/back"/>
+        <TextView
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textSize="15sp"
+            android:text="@string/str_enter_site_title"/>
+        <ImageView
+            android:id="@+id/my_garbage_bin"
+            android:layout_width="40dp"
+            android:layout_height="35dp"
+            android:src="@drawable/garbage_bin" />
+    </LinearLayout>
+
+    <!-- 由于RecyclerView不是在内置系统的SDK中，所以需要把完整的包路径写出来 -->
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

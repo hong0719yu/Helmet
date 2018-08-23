@@ -1,0 +1,119 @@
+<resources>
+    <!-- 登录 login -->
+    <string name="app_name">helmet</string>
+    <string name="str_login_title">登录</string>
+    <string name="str_login_account">手机号</string>
+    <string name="str_login_password">口令</string>
+    <string name="str_login_forget_password">忘记密码?</string>
+    <string name="str_login_register">立即注册</string>
+    <string name="str_login_remember">记住密码</string>
+    <string name="str_login_quit">退出</string>
+    <!-- 注册 register -->
+    <string name="str_register_title">注册</string>
+    <string name="str_register_account">手机号</string>
+    <string name="str_register_password">密码</string>
+    <string name="str_register_verification">验证码</string>
+    <string name="str_register_clickGet">获取验证码</string>
+    <string name="str_register_now">立即注册</string>
+    <string name="str_register_foreman">工长</string>
+    <string name="str_register_worker">工人</string>
+    <string name="str_register_contract">阅读协议</string>
+    <string name="str_register_agreement">我同意上述协议</string>
+    <!-- 认证 certification-->
+    <string name="str_certification_worker_title">实名认证</string>
+    <string name="str_certification_jump">跳过此步骤</string>
+    <string name="str_certification_worker_name">姓名:</string>
+    <string name="str_certification_ID">身份证号:</string>
+    <string name="str_certification_worker_submit">提交认证</string>
+    <string name="str_certification_foreman_title">工长实名认证</string>
+    <string name="str_certification_enterprise_name">企业名称:</string>
+    <string name="str_certification_tax_code">税务编码:</string>
+    <string name="str_certification_representative">法人代表:</string>
+    <string name="str_certification_foreman_name">工长姓名:</string>
+    <string name="str_certification_foreman_submit">提交审核</string>
+    <string name="str_take_picture_front">正面照</string>
+    <string name="str_take_picture_back">背面照</string>
+    <string name="str_album">相册</string>
+    <string name="str_back">返回</string>
+
+    <!-- 找回密码 -->
+    <string name="str_find_pwd">找回密码</string>
+
+    <!-- 首页 firstPage -->
+    <string name="str_home_enter_site">进入工地</string>
+    <string name="str_home_new_site">新工地</string>
+    <string name="str_home_first_title">你的利润哪儿去了？细数工地上的100种浪费......</string>
+    <string name="str_home_first_date">2018-05-26</string>
+    <string name="str_home_first_read_count">1</string>
+    <string name="str_home_first_like_count">0</string>
+    <string name="str_home_second_title">正确贴砖、施工方法很重要！~（动图解析）</string>
+    <string name="str_home_second_date">2018-05-22</string>
+    <string name="str_home_second_read_count">5</string>
+    <string name="str_home_second_like_count">8</string>
+    <string name="str_home_third_title">正确贴砖、施工方法很重要！~（动图解析）</string>
+    <string name="str_home_third_date">2018-05-20</string>
+    <string name="str_home_third_read_count">10</string>
+    <string name="str_home_third_like_count">10</string>
+    <string name="str_home_first_page">首页</string>
+    <string name="str_home_nearby">附近</string>
+    <string name="str_home_communication">交流</string>
+    <string name="str_home_training">培训</string>
+    <string name="str_home_personal">个人</string>
+
+    <!-- 工地列表  -->
+    <string name="str_enter_site_title">我的全部工地</string>
+    <string name="str_enter_site_site_code">工地代码:</string>
+    <string name="str_enter_site_site_location">所处位置:</string>
+
+    <!-- 工地位置 -->
+    <string name="str_site_location_title">工地位置</string>
+    <string name="str_site_start_navigation">启动导航</string>
+
+    <!-- 新工地地图 -->
+    <string name="str_new_site_map_title">新工地地图</string>
+
+    <!-- 工地求职 site find work -->
+    <string name="str_site_find_work">工地求职</string>
+    <string name="str_site_find_work_project_code">项目编号：</string>
+    <string name="str_site_find_work_project_code_content">我是项目编号内容</string>
+    <string name="str_site_find_work_project_name">项目名称：</string>
+    <string name="str_site_find_work_project_name_content">我是项目名称内容</string>
+    <string name="str_site_find_work_project_location">项目地点：</string>
+    <string name="str_site_find_work_project_location_content">我是项目地点内容</string>
+    <string name="str_site_find_work_project_cor">承建单位：</string>
+    <string name="str_site_find_work_project_cor_content">我是承建单位内容</string>
+    <string name="str_site_find_work_project_work">所需工种：</string>
+    <string name="str_site_find_work_project_work_content">我是所需工种内容</string>
+    <string name="str_site_find_work_project_salary">薪酬：</string>
+    <string name="str_site_find_work_project_salary_content">我是薪酬内容</string>
+    <string name="str_site_find_work_contact_info">联系方式：</string>
+    <string name="str_site_find_work_contact_phone">12345678910</string>
+    <string name="str_site_find_work_remark">备注</string>
+    <string name="str_site_find_work_remark_content">我是备注内容</string>
+    <string name="str_site_find_work_submit_application">提交申请</string>
+    <string name="str_site_find_work_tel_consultation">电话咨询</string>
+
+    <!-- 施工现场 construction site-->
+    <string name="str_construction_site_helmet_camera_status">头盔摄像头状态</string>
+    <string name="str_construction_site_remote_assistance">请求远程协助</string>
+    <string name="str_construction_site_remote_guidance">接收远程指导</string>
+    <string name="str_construction_site_vedio_transmission">传输现场视频</string>
+    <string name="str_construction_site_foreman_remark">工长留言:</string>
+    <string name="str_construction_site_foreman_remark_content">2018/06/30 08:00 请将工地清理干净</string>
+    <string name="str_construction_site_sign_in">签到</string>
+    <string name="str_construction_site_sign_off">签退</string>
+
+    <!-- 用人工地 labour site -->
+    <string name="str_labour_site_title">用人工地</string>
+    <string name="str_labour_site_all_jobs">全部</string>
+    <string name="str_labour_site_welder_job">焊工</string>
+    <string name="str_labour_site_electrician_job">电工</string>
+    <string name="str_labour_site_carpentry_job">木工</string>
+    <string name="str_labour_site_scaffolder_job">架子工</string>
+    <string name="str_labour_site_crane_job">塔吊</string>
+    <string name="str_labour_site_shovel_machine_job">挖铲机</string>
+    <string name="str_labour_site_loading_unloading_job">装卸</string>
+    <string name="str_labour_site_pipeline_job">管道</string>
+    <string name="str_labour_site_other_job">其它</string>
+
+</resources>
